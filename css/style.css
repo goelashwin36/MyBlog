@@ -1,4 +1,4 @@
-.preloader {
+/*.preloader {
     background-color: #141414;
     top:0;
     bottom:0;
@@ -18,4 +18,56 @@
     width: 50px;
     height: 50px;
     margin: auto;
+}*/
+
+.black_bg{
+    background: #141414;
+    width:100%;
+    padding: 20px;
+    height: 500px;
+
+}
+.white_bg{
+
+    background: #EE6C4D;
+    width:100%;
+    padding: 20px;
+    height: 500px;
+
+}
+nav{
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+nav ul{
+    background: aqua;
+    margin:0;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 15px;
+}
+nav ul li:hover{
+    background: blue;
+    border-radius: 10px;
+    color: white;
+}
+nav ul li:hover a{
+    color: white;
+    text-decoration: none;
+
+}
+
+active{
+    background: #42d4f4;
+    border-radius: 10px;
+}
+nav a{
+    text-decoration: none;
+    font-family: fontin;
+    font-weight: bold;
 }

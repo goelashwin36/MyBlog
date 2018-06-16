@@ -23,16 +23,14 @@
 
 .black_bg{
     padding: 20px;
-    border-width: 5px;
-    border-style: solid;
+    background-color: #f0f0f0;
 
 }
 .white_bg{
 
-    color: grey;
+    color: #d5d5d5;
     padding: 20px;
-    border-width: 5px;
-    border-style: solid;
+
 
 }
 
@@ -48,55 +46,47 @@ html,body{
 
 
 /*===========Nav Bar===========*/
-/*
+
 nav{
     margin: 0;
-    position: fixed;
     width: 100%;
     z-index: 999;
-    background: rgba(236,236,236,0.1);
+    background: rgba(236,236,236,0.2) !important;
 }
-nav ul{
-    margin:0;
-    height: 40px;
-    text-align: center;
-    overflow: hidden;
-
+.navbar-nav {
+    padding: 10px 6px 10px 6px;
 }
-nav ul li{
-    display: inline-block;
-    list-style-type: none;
-    padding: 15px;
-*/
-
+.nav-item{
+padding: 5px;
 }
-nav ul li:hover{
-    background: blue;
-    border-radius: 10px;
-    color: white;
-}
-nav ul li:hover a{
-    color: white;
-    text-decoration: none;
-
+.nav-link{
+    font-size: 21px;
+    font-weight: 200;
 }
 
-active{
-    background: #42d4f4;
-    border-radius: 10px;
-}
-nav a{
-    text-decoration: none;
-    font-family: fontin;
-    font-weight: bold;
-    color: blue;
-}
+
+
+
+
 
 
 #home{
     background-image: url(../img/bg.png);
     width: 100%;
     height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}#home_2{
+    background-image: url(../img/tech.png);
+    width: 100%;
+    height: 20vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 /* ---- particles.js container ---- */
@@ -118,10 +108,9 @@ nav a{
 /*===========Section===========*/
 
 .section{
-    font-size: 25pxpx;
+    font-size: 25px;
     padding: 50px;
     overflow: hidden;
-    width: 90%;
     margin: auto;
 }
 #me_img{
@@ -137,16 +126,17 @@ nav a{
 #me_txt{
 
     display:inline-block;
-    text-align: left;
+    text-align: center;
 
 }
-.heading{
+#me_txt .heading{
     font-size: 40px;
     color: #a2a8a6;
-    text-align: center;
+    text-align: center !important;
 }
 
 .container{
     text-align: center !important;
 
 }
+

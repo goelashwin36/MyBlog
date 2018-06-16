@@ -24,7 +24,7 @@ $(document).ready(function(){
     for(i=1;i<=4;i++)
     {
         $("#"+i).fadeOut();
-        $("#"+i).delay(i*1000).fadeIn(1000);
+        $("#"+i).delay(i*1500).fadeIn(1000);
 
 
 

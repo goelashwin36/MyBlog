@@ -11,6 +11,7 @@
 .preloader img {
     display: block;
     position: absolute;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
@@ -20,8 +21,6 @@
     margin: auto;
 }*/
 
-#1, #2, #3, #4{
-}
 
 .hero-text {
     text-align: center;
@@ -75,6 +74,7 @@ nav{
 .nav-link{
     font-size: 21px;
     font-weight: 200;
+    text-align: center !important;
 }
 
 
@@ -122,9 +122,9 @@ nav{
 
 .section{
     font-size: 25px;
-    padding: 50px;
+    padding: 5%;
     overflow: hidden;
-    margin: 50px;
+    margin: 5%;
     box-shadow: 10px 10px 50px grey;
 }
 #me_img{
@@ -153,5 +153,79 @@ nav{
     text-align: center !important;
 
 }
+footer{
+    background: gradient
+}
 
 
+#grad {
+    width: 100wh;
+    height: 40vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #000000, #5d5d5d, #6f7a7d, #9099a0);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 7s ease infinite;
+    -moz-animation: Gradient 7s ease infinite;
+    animation: Gradient 7s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/*===========Fa Back to top===========*/
+.backtotop{
+    position: fixed;
+    display: none;
+    bottom: 15px;
+    right: 15px;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 8px 10px 10px 10px;
+    transition: background 0.5s;
+}
+.backtotop:hover{
+    background: rgba(0,0,0,0.4);
+    color: white;
+}
+
+.fas{
+    vertical-align: center !important;
+}

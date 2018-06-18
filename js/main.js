@@ -20,14 +20,26 @@
 // }
 
 
-$(document).ready(function(){
-    for(i=1;i<=4;i++)
-    {
-        $("#"+i).fadeOut();
-        $("#"+i).delay(i*1500).fadeIn(1000);
+$(document).ready(function() {
 
-
-
+    for (i = 1; i <= 3; i++) {
+        $("#" + i).delay(i * 1500 - 1000).fadeIn(1000);
     }
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() < 150) {
+            $('.backtotop').fadeOut("slow");
+            $('#navigation1').slideDown(500);
+        }
+        else {
+            $('.backtotop').fadeIn("slow");
+            $('#navigation1').slideUp(200);
+        }
+    });
+
+    $('.backtotop').click(function(){
+        $('html, body').animate({scrollTop : 0},1500, 'easeInOutQuint');
+        return false;
+    });
 
 });

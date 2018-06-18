@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!--Base Files-->
     <title>Ash</title>
@@ -8,6 +7,9 @@
     <!--Swiper slideshow-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/js/swiper.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/css/swiper.min.css" />
+    <!--fa css-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -16,20 +18,21 @@
     <meta name="author" content="Ashwin Goel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 </head>
 <body>
+<a href="#" class="backtotop">
+<i class="fas fa-chevron-circle-up"></i>
+</a>
 <!--
 <div class="preloader">
     <img src="img/loader.svg" alt="Loading...">
 </div>-->
-
-
 <!--====================Nav Bar===================-->
 <!--Home, About, Projects, Gallery, Contact-->
-
-<nav class="navbar navbar-expand-md fixed-top">
+<nav id="navigation1" class="navbar navbar-expand-md fixed-top justify-content-between">
     <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
@@ -49,8 +52,6 @@
              <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
             </li>
-
-
         </ul>
     </div>
 </nav>
@@ -62,10 +63,9 @@
 <!--Background Image, Hera heading, Fade in from left, Particle.js-->
 <div id="home">
     <div class="hero-text">
-        <h1 id="1">These ain't bars..</h1>
-        <h1 id="2">It's just me</h1>
-        <h1 id="3">Taking a glimse</h1>
-        <h1 id="4">Of this Tech World!!</h1>
+        <h1 id="1">I ain't behind these bars..</h1>
+        <h1 id="2">Just taking a glimpse</h1>
+        <h1 id="3">Of this Techy World!!</h1>
 
     </div>
 </div>
@@ -87,8 +87,6 @@
             Content Content Content Content Content Content Content Content Content Content
             Content Content Content Content Content Content Content Content Content Content
             Content Content Content Content Content Content Content Content Content
-
-
         </p>
     </div>
     </div>
@@ -196,15 +194,13 @@
         </div>
     </form>
 </div>
-
-
 <!--====================Footer===================-->
 <!--Footer with my social media handles, a brief intro and my positions.-->
-<div id="footer">
-
+<footer>
+<div id="grad">
 
 </div>
-
+</footer>
 <!--=====================Script-=====================-->
 <!--Slideshow-->
 <script>
@@ -233,15 +229,20 @@
     });
 </script>
 <!--Jquery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<!--Main js file-->
 <script src="js/main.js"></script>
-
 <!--Bootstrap-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--fa icons-->
+<script src="https://use.fontawesome.com/1983f7fdbc.js"></script>
+<!--easing js-->
+<script src="lib/easing/easing.min.js"></script>
+
 <!--Particle js-->
-<script src="js/particles.js"></script>
-<script src="js/app.js"></script>
+<!--<script src="js/particles.js"></script>-->
+<!--<script src="js/app.js"></script>-->
 <!--Easing js smooth scroll-->
 </body>
 </html>

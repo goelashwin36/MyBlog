@@ -20,17 +20,28 @@
     <meta description="My website" charset="UTF-8">
     <meta name="author" content="Ashwin Goel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--jquery-->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script>
 
+    $(window).onload(function(){
+        $('#loader').fadeOut("slow");
+    });
+    </script>
 
 </head>
 <body>
+<!--Preloader-->
+<div class="preloader" id="loader">
+    <img src="img/loader.svg" alt="Loading...">
+</div>
+
+
+<!--Back to top button-->
 <a href="#" class="backtotop">
     <i class="fas fa-chevron-circle-up"></i>
 </a>
-<!--
-<div class="preloader">
-    <img src="img/loader.svg" alt="Loading...">
-</div>-->
+
 <!--====================Nav Bar===================-->
 <!--Home, About, Projects, Gallery, Contact-->
 <nav id="navigation1" class="navbar navbar-expand-md fixed-top justify-content-between">
@@ -234,7 +245,6 @@
     });
 </script>
 <!--Jquery-->
-<script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/jquery/jquery-migrate.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><!--Main js file-->

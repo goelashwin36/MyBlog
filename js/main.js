@@ -1,45 +1,50 @@
-// // When the user scrolls the page, execute myFunction
-// window.onscroll = function() {myFunction()};
-// // Get the navbar
-// var navbar = document.getElementById("navbar");
-// var home=document.getElementById("home").offsetTop;
-// var my_projects=document.getElementById("my_projects");
-// var about_me=document.getElementById("about_me");
-// var gallery=document.getElementById("gallery");
-// var contact=document.getElementById("contact");
-// // Get the offset position of the navbar
-// var sticky = navbar.offsetTop;
-//
-// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunction() {
-//     if (window.pageYOffset >=contact.pageYOffset) {
-//         navbar.classList.add("stickyactive")
-//     } else {
-//         navbar.classList.remove("sticky");
-//     }
-// }
-
-
 $(document).ready(function() {
 
     for (i = 1; i <= 3; i++) {
-        $("#" + i).delay(i * 1500 - 1000).fadeIn(1000);
+        $("#hero-" + i).animate({opacity: '1.0'});
+        console.log('hero');
     }
+
+    // Initiate the wowjs
+    new WOW().init();
+
+
+    //fade or slide backtotop and navbar1 on scrolling
 
     $(window).scroll(function () {
         if ($(this).scrollTop() < 150) {
             $('.backtotop').fadeOut("slow");
-            $('#navigation1').slideDown(500);
+            $('#navigation1').removeClass('active',1000);
         }
         else {
             $('.backtotop').fadeIn("slow");
-            $('#navigation1').slideUp(200);
+            $('#navigation1').addClass('active',1000);
+
+
         }
+        return false;
     });
+    //Backtotop smooth scrolling
 
     $('.backtotop').click(function(){
         $('html, body').animate({scrollTop : 0},1500, 'easeInOutQuint');
         return false;
     });
+    //Smooth scrlling to hash links
+    $('a[href*="#"]:not([href="#"])').on('click', function() {
+        var id = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(id).offset().top}, 1500,'easeInOutQuint');
+        return false;
+
+    });
+
+
+
+
+
+
+
 
 });

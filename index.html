@@ -4,13 +4,18 @@
     <!--Base Files-->
     <title>Ash</title>
     <link rel="stylesheet" media="screen" href="css/style.css">
-    <!--Swiper slideshow-->
+    <!--Swiper js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/js/swiper.min.js"></script>
+    <!--Swiper slideshow-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/css/swiper.min.css" />
     <!--fa css-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!--Bootstrap-->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--Jquery ui-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--Animate css-->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
     <!--Meta Tags-->
     <meta description="My website" charset="UTF-8">
     <meta name="author" content="Ashwin Goel">
@@ -61,25 +66,27 @@
 <!--Background Image, Hera heading, Fade in from left, Particle.js-->
 <div id="home">
     <div class="hero-text">
-        <h1 id="1">I ain't behind these bars..</h1>
-        <h1 id="2">Just taking a glimpse</h1>
-        <h1 id="3">Of this Techy World!!</h1>
+        <h1 id="hero-1">These ain't bars..</h1>
+        <h1 id="hero-2">It's me taking a glimpse</h1>
+        <h1 id="hero-3">Of this Techy World!!</h1>
 
     </div>
 </div>
+<!--====================Nav2===================-->
+
 <!--====================ABOUT===================-->
 <!--My pic in the left centre aligned, Then about me column in the right-->
 <div id="about"  class="section black_bg">
     <div class="container">
         <div class="row">
             <!-- Your content goes here -->
-            <div id="me_img" class="col-lg-4 col-md-4 col-sm-12 align-items-center">
+            <div id="me_img" class="col-lg-4 col-md-4 col-sm-12 align-items-center  wow rollIn">
                 <img src="img/me.png">
             </div>
 
-            <div id="me_txt" class="col-md-8 ">
-                <h1 class="heading">About Me</h1>
-                <p class="description">
+            <div id="me_txt" class="col-md-8">
+                <h1 class="heading  wow zoomIn">About Me</h1>
+                <p class="description  wow fadeInRight">
                     Content Content Content Content Content Content Content Content Content Content
                     Content Content Content Content Content Content Content Content Content Content
                     Content Content Content Content Content Content Content Content Content Content
@@ -96,7 +103,7 @@
 <!--====================PROJECTS===================-->
 <!--Displays some of my projects in rectangular fancy big responsive tabs-->
 <div id="projects" class="section white_bg">
-    <div class="container">
+    <div class="container wow zoomIn">
         <div class="row">
             <div class="col">
                 <div  id="me_txt">
@@ -110,7 +117,7 @@
 <!--====================GALLERY===================-->
 <!--Gallery with slider and some of my pics-->
 <div id="gallery" class="section black_bg">
-    <div class="container">
+    <div class="container wow zoomIn">
         <div class="row">
             <div class="col">
                 <div  id="me_txt">
@@ -160,7 +167,7 @@
 <!--====================CONTACT===================-->
 <!--Contact me section with a form, And my details-->
 <div id="contact" class="section white_bg">
-    <div class="container">
+    <div class="container wow zoomIn">
         <div class="row">
             <div class="col">
                 <div  id="me_txt">
@@ -169,22 +176,22 @@
             </div>
         </div>
     </div>
-    <form>
+    <form class="">
         <div class="row justify-content-center">
             <div class="col-3 ">
-                <input type="text" class="form-control" placeholder="First name">
+                <input type="text" class="form-control wow fadeInLeft" placeholder="First name">
             </div>
             <div class="col-3 ">
-                <input type="text" class="form-control" placeholder="Last name">
+                <input type="text" class="form-control wow fadeInRight" placeholder="Last name">
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center wow fadeInUp">
             <div class="col-6 ">
                 <br>
                 <input type="email" class="form-control" placeholder="E-Mail">
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center wow fadeInUp">
             <div class="col-6 ">
                 <br>
                 <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
@@ -229,7 +236,8 @@
 <!--Jquery-->
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/jquery/jquery-migrate.min.js"></script>
-<!--Main js file-->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><!--Main js file-->
 <script src="js/main.js"></script>
 <!--Bootstrap-->
 <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -237,10 +245,12 @@
 <script src="lib/easing/easing.min.js"></script>
 <!--fa js-->
 <script src="https://use.fontawesome.com/1983f7fdbc.js"></script>
+<!--wow js-->
+<script src="lib/wow/wow.min.js"></script>
+
 
 <!--Particle js-->
 <!--<script src="js/particles.js"></script>-->
 <!--<script src="js/app.js"></script>-->
-<!--Easing js smooth scroll-->
 </body>
 </html>

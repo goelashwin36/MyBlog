@@ -30,6 +30,7 @@
     transform: translate(-50%, -50%);
     color: white;
     font-size:50px;
+    opacity: 0;
 }
 
 
@@ -63,7 +64,7 @@ nav{
     margin: 0;
     width: 100%;
     z-index: 999;
-    background: rgba(236,236,236,0.2) !important;
+    background: rgba(236,236,236,0.2);
 }
 .navbar-nav {
     padding: 10px 6px 10px 6px;
@@ -77,8 +78,17 @@ nav{
     text-align: center !important;
 }
 
+ .active{
+     background: linear-gradient(-45deg, #000000, #5d5d5d) !important;
+     background-size: 400% 400%;
+     /*!*-webkit-animation: Gradient 7s ease infinite;*/
+     /*-moz-animation: Gradient 7s ease infinite;*/
+     /*animation: Gradient 7s ease infinite;*!*/
 
-
+ }
+.active .navbar-nav{
+    padding: 0px 6px !important;
+}
 
 
 

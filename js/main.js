@@ -19,6 +19,7 @@ $(document).ready(function() {
         else {
             $('.backtotop').fadeIn("slow");
             $('#navigation1').addClass('active',1000);
+            $('#navigation1').animate({background : })
 
 
         }

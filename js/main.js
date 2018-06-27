@@ -2,7 +2,6 @@ $(document).ready(function() {
 
     for (i = 1; i <= 3; i++) {
         $("#hero-" + i).animate({opacity: '1.0'});
-        console.log('hero');
     }
 
     // Initiate the wowjs
@@ -14,12 +13,11 @@ $(document).ready(function() {
     $(window).scroll(function () {
         if ($(this).scrollTop() < 150) {
             $('.backtotop').fadeOut("slow");
-            $('#navigation1').removeClass('active',1000);
+            $('#navigation1').removeClass('active',500);
         }
         else {
             $('.backtotop').fadeIn("slow");
-            $('#navigation1').addClass('active',1000);
-            $('#navigation1').animate({background : })
+            $('#navigation1').addClass('active',500);
 
 
         }

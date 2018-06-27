@@ -10,7 +10,7 @@
 }
 .preloader img {
     display: block;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
@@ -35,7 +35,8 @@
 
 .black_bg{
     padding: 20px;
-    background-color: #f0f0f0;
+    background-image: url(../img/blacksec.jpg);
+    color: white;
 
 }
 .white_bg{
@@ -131,10 +132,9 @@ nav{
 
 .section{
     font-size: 25px;
-    padding: 5%;
     overflow: hidden;
-    margin: 5%;
-    box-shadow: 10px 10px 50px grey;
+    padding: 5% 0%;
+    background-size: 150%;
 }
 #me_img{
     margin: auto !important;

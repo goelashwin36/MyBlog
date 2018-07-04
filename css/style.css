@@ -1,3 +1,12 @@
+/*===========Base===========*/
+html,body{
+    width:100%;
+    height:100%;
+    background: #fff;
+    font-family: Montserrat;
+}
+
+/*===========Preloader===========*/
 .preloader {
     background-color: #141414;
     top:0;
@@ -5,7 +14,7 @@
     right:0;
     left:0;
     z-index: 9999;
-    position: absolute;
+    position: fixed;
 
 }
 .preloader img {
@@ -19,44 +28,6 @@
     height: 50px;
     margin: auto;
 }
-
-
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size:50px;
-    opacity: 0;
-}
-
-
-.black_bg{
-    padding: 20px;
-    background-image: url(../img/blacksec.jpg);
-    color: white;
-
-}
-.white_bg{
-
-    color: #d5d5d5;
-    padding: 20px;
-
-
-}
-
-/* ---- base ---- */
-
-html,body{
-    width:100%;
-    height:100%;
-    background: #fff;
-
-
-}
-
 
 /*===========Nav Bar===========*/
 
@@ -73,25 +44,129 @@ nav{
     padding: 5px;
 }
 .nav-link{
-    font-size: 21px;
-    font-weight: 200;
+    font-size: 22px;
+    font-weight: 400;
     text-align: center !important;
 }
 
- .active{
-     /*background: linear-gradient(-45deg, #000000, #5d5d5d) !important;*/
-     background-size: 400% 400%;
-     /*!*-webkit-animation: Gradient 7s ease infinite;*/
-     /*-moz-animation: Gradient 7s ease infinite;*/
-     /*animation: Gradient 7s ease infinite;*!*/
+.active{
+    /*background: linear-gradient(-45deg, #000000, #5d5d5d) !important;*/
+    background-size: 400% 400%;
+    background-color: white;
+    border-bottom: 2px #dadada solid;
+    /*!*-webkit-animation: Gradient 7s ease infinite;*/
+    /*-moz-animation: Gradient 7s ease infinite;*/
+    /*animation: Gradient 7s ease infinite;*!*/
 
- }
+}
 .active .navbar-nav{
     padding: 0px 6px !important;
 }
 
+nav button{
+    background-color: white !important;
+    padding: 4px 8px !important;
+}
+/*===========Hero Text===========*/
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size:50px;
+    opacity: 0;
+}
+
+.navbar-brand{
+    -webkit-transform: rotateZ(-7deg);
+    -moz-transform: rotateZ(-7deg);
+    -ms-transform: rotateZ(-7deg);
+    -o-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg);
+    margin-left: 50px !important;
+}
+
+/*===========Mouse Scroll Button===========*/
+
+.scroller{
+
+    width: 120px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 15px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+
+}
+.scroll-text{
+    color: white;
+    display: block;
+    font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+.icon-basic-magic-mouse{
+    color: white;
+    opacity: 0.6;
+}
+.scroller:hover{
+    cursor: pointer;
+}
+.scroller:hover .icon-basic-magic-mouse{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.scroller:hover .scroll-text{
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 1;
+}
 
 
+/*===========Sections===========*/
+.section{
+    overflow: hidden;
+    padding: 6% 0%;
+    margin: 5% 0%;
+    background-size: 150%;
+}
+
+.black_bg{
+    background: #56ccf2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4db6d8, #095dd8); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4db6d8, #095dd8);
+    color: white;
+    padding: 20px;
+
+}
+.black_bg .heading{
+    color: #fff;
+
+}
+.white_bg{
+    color: #d5d5d5;
+    padding: 20px;
+}
+.white_bg .heading{
+    color: #4ebdf1;
+
+}
+
+
+/*===========Home page===========*/
 
 #home{
     background-image: url(../img/bg6.jpg);
@@ -113,38 +188,48 @@ nav{
 
 }
 /* ---- particles.js container ---- */
-/*canvas {
+canvas {
     display: block;
     vertical-align: bottom;
 }
 #particles-js{
     width: 100%;
     height: 100vh;
-    background-image: url(../img/bg.png);
+    background-image: url(../img/bg6.jpg);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-}*/
-
-
-
-/*===========Section===========*/
-
-.section{
-    font-size: 25px;
-    overflow: hidden;
-    padding: 5% 0%;
-    background-size: 150%;
 }
+
+
+/*===========About===========*/
+
+
 #me_img{
     margin: auto !important;
 }
 #me_img img{
-    max-width: 200px;
-    height: auto;
-    z-index: 1000;
-    margin: auto !important;
+    display: block;
+    width: 250px;
+    height: 260px;
+    margin: 1em auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 99em;
+    border: 5px solid #eee;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 
+}
+#me_img img:hover{
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+    box-shadow: 0 22px 43px rgba(0,0,0,0.2);
 }
 #me_txt{
 
@@ -153,23 +238,196 @@ nav{
 
 }
 #me_txt .heading{
-    font-size: 40px;
-    color: #a2a8a6;
+    font-family: 'Carter One', cursive;
+    font-size: 50px;
+    text-transform: uppercase;
     text-align: center !important;
+    margin-bottom: 50px;
 }
 
 .container{
     text-align: center !important;
 
 }
-footer{
-    background: gradient
+
+
+
+
+/*===========Articles===========*/
+
+.pcard{
+    max-width: 300px !important;
+    min-width: 280px !important;
+    height: 500px;
+    margin: 50px auto;
+    display: inline-block;
+    float: left;
+    background-color: #fff;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-right: 20px black;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+.pcard:hover{
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.3);
+
+}
+.pcard img{
+    display:block;
+    width: 250px;
+    height: 225px;
+    border-radius: inherit;
+    margin: 20px auto;
+    transition-duration: 0.3s;
+}
+.pcard img:hover{
+    -webkit-transform: rotateZ(-10deg);
+    -moz-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    -o-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+}
+
+.pcard hr{
+    border-width: 2px;
+    background-color: #979797;
+    width: 120px;
+    display:block;
+    margin: 10px auto;
+    border-style: double;
+
+}
+
+.pcard_head{
+    font-size: 25px;
+    text-align: center;
+    color: #979797;
+    font-family: 'Carter One', cursive;
+}
+
+.pcard_body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: black;
+
+}
+.pcard a{
+    color: #4ebdf1 !important;
+    text-align: center !important;
+}
+/*===========Contact===========*/
+
+#contact h3{
+    font-family: inherit;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+
+}
+#contact label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#contact .response{
+    display: none;
+    font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    margin: 10px auto;
+
+}
+#contact .red{
+    border: 2px solid #ff4a46 !important;
+    -moz-box-shadow:    inset 0 0 10px #ff0900;
+    -webkit-box-shadow: inset 0 0 10px #ff0900;
+    box-shadow:         inset 0 0 10px #ff0900;
+
+}
+#contact .green{
+    border: 2px solid #7cff8c !important;
+    -moz-box-shadow:    inset 0 0 10px #00ff31;
+    -webkit-box-shadow: inset 0 0 10px #00ff31;
+    box-shadow:         inset 0 0 10px #00ff31;
+
 }
 
 
+/*===========Fa Back to top===========*/
+.backtotop{
+    position: fixed;
+    display: none;
+    bottom: 15px;
+    right: 15px;
+    font-size: 25px;
+    height: 30px;
+    width: 25px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 8px 10px 8px 10px;
+    transition: background 0.5s;
+    box-sizing: content-box !important;
+}
+.backtotop:hover{
+    background: rgba(0,0,0,0.4);
+    color: white;
+}
+
+.fa{
+    vertical-align: center !important;
+}
+.backtotop i{
+    -webkit-transform: translateY(-1mm);
+    -moz-transform: translateY(-1mm);
+    -ms-transform: translateY(-1mm);
+    -o-transform: translateY(-1mm);
+    transform: translateY(-1mm);
+}
+
+/*===========Footer===========*/
+
+footer{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 50px 0;
+}
+footer ul li{
+    display: inline-block;
+    padding-right: 35px;
+    margin-right: 35px;
+    border-right: 1px solid #fff;
+}
+footer ul li:nth-child(4){
+    border: none;
+
+}
+footer ul li a {
+    color: white !important;
+    text-decoration: none;
+
+}
+footer ul li a:hover{
+    color: #c7c7c7 !important;
+    text-decoration: none;
+
+
+}
+    /*===========Footer Gradient===========*/
+
 #grad {
-    width: 100wh;
-    height: 40vh;
+    height: inherit;
     color: #fff;
     background: linear-gradient(-45deg, #000000, #5d5d5d, #6f7a7d, #9099a0);
     background-size: 400% 400%;
@@ -212,29 +470,4 @@ footer{
     100% {
         background-position: 0% 50%
     }
-}
-
-/*===========Fa Back to top===========*/
-.backtotop{
-    position: fixed;
-    display: none;
-    bottom: 15px;
-    right: 15px;
-    font-size: 25px;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    border-radius: 10px;
-    background: rgba(0,0,0,0.3);
-    color: white;
-    padding: 8px 10px 10px 10px;
-    transition: background 0.5s;
-}
-.backtotop:hover{
-    background: rgba(0,0,0,0.4);
-    color: white;
-}
-
-.fas{
-    vertical-align: center !important;
 }

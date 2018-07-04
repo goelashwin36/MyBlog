@@ -4,8 +4,11 @@
     <!--Base Files-->
     <title>Ash</title>
     <link rel="stylesheet"  href="css/style.css">
-    <!--fa css-->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!--fa js-->
+    <script src="https://use.fontawesome.com/1619b5fcd7.js"></script>
+    <!--Linea icons css-->
+    <link href="icons/_ICONFONT/styles.css" rel="stylesheet">
+
     <!--Bootstrap-->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!--Animate css-->
@@ -16,13 +19,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--jquery-->
     <script src="lib/jquery/jquery.min.js"></script>
+
     <script>
         console.log('Loaded');
-        $(document).ready(function(){
-        $('#img_preloader').fadeOut("slow");
+        $(window).ready(function(){
         $('#loader').delay(1000).fadeOut(350);
     });
     </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Muli|Montserrat" rel="stylesheet">
 
 </head>
 <body>
@@ -34,15 +39,15 @@
 
 <!--Back to top button-->
 <a href="#" class="backtotop">
-    <i class="fas fa-chevron-circle-up"></i>
+    <i class="fa fa-chevron-circle-up"></i>
 </a>
 
 <!--====================Nav Bar===================-->
 <!--Home, About, Projects, Gallery, Contact-->
 <nav id="navigation1" class="navbar navbar-expand-md fixed-top justify-content-between">
-    <a class="navbar-brand" href="#">Logo</a>
+    <a class="navbar-brand" style="font-family: 'Carter One', cursive; font-size: 30px; " href="#">Ashwin</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span><i class="fa fa-bars" aria-hidden="true"></i></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
         <ul class="navbar-nav">
@@ -53,7 +58,7 @@
                 <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#articles">Articles</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#gallery">Gallery</a>
@@ -71,11 +76,16 @@
 <!--==================== HOME ===================-->
 <!--Background Image, Hera heading, Fade in from left, Particle.js-->
 <div id="home">
+
     <div class="hero-text">
+
         <h1 id="hero-1">These ain't bars..</h1>
         <h1 id="hero-2">It's me taking a glimpse</h1>
         <h1 id="hero-3">Of this Techy World!!</h1>
-
+    </div>
+    <div id="mouse" class="scroller">
+        <span class="scroll-text">Scroll down</span>
+        <span class="icon-basic-magic-mouse"></span>
     </div>
 </div>
 <!--====================Nav2===================-->
@@ -103,22 +113,64 @@
         </div>
     </div>
 </div>
-<div id="home_2">
+<!--====================Parallax bg===================-->
 
+<div id="home_2">
 </div>
-<!--====================PROJECTS===================-->
-<!--Displays some of my projects in rectangular fancy big responsive tabs-->
-<div id="projects" class="section black_bg">
+
+<!--====================Articles===================-->
+<!--Displays some of my articles in rectangular fancy big responsive tabs-->
+<div id="articles" class="section black_bg">
     <div class="container wow zoomIn">
         <div class="row">
             <div class="col">
                 <div  id="me_txt">
-                    <h1 class="heading">Projects</h1>
+                    <h1 class="heading">Articles</h1>
                 </div>
             </div>
         </div>
     </div>
+    <div class="row">
+    <div class="pcard col-4">
+        <img src="img/steg.jpg">
+        <hr>
+        <div class="pcard_head">Steganography</div>
+        <div class="pcard_body">
+            Steganography is the art of hiding information in plain sight. This project
+            uses the capabilities of python language to hide any data in any image.
+            <br>
+            <a href="https://www.geeksforgeeks.org/image-based-steganography-using-python/" target="_blank">Click here to explore..</a>
+        </div>
 
+    </div>
+    <div class="pcard col-4">
+        <img src="img/threading.jpg">
+        <hr>
+        <div class="pcard_head">MultiThreading</div>
+        <div class="pcard_body">
+            MultiThreading is a concept by which a program can be devided into multiple parts which can be executed
+            simultaneously and hence increasing the efficiency of the CPU.
+            <br>
+            <a href="https://www.geeksforgeeks.org/operating-system-multithreading/" target="_blank">Click here to explore..</a>
+
+        </div>
+    </div>
+
+        <div class="pcard col-4">
+        <img src="img/wless.jpg" style="width:250px; height: 210px">
+        <hr>
+        <div class="pcard_head">Modes of Wireless Connection</div>
+        <div class="pcard_body">
+            This article deals with the various ways in which wireless connections can be made in between different nodes which may also
+            include a head server.
+            <br>
+            <a href="https://www.geeksforgeeks.org/modes-of-wireless-connectivity/" target="_blank">Click here to explore..</a>
+
+        </div>
+    </div>
+
+
+</div>
 </div>
 <!--====================GALLERY===================-->
 <!--Gallery with slider and some of my pics-->
@@ -138,14 +190,7 @@
     </div>
 
     <style>
-        body {
-            background: #fff;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color:#000;
-            margin: 0;
-            padding: 0;
-        }
+
         .swiper-container {
             width: 100%;
             padding-top: 50px;
@@ -165,10 +210,7 @@
             <div class="swiper-slide" style="background-image:url(img/me.png)"></div>
             <div class="swiper-slide" style="background-image:url(img/me.png)"></div>
             <div class="swiper-slide" style="background-image:url(img/me.png)"></div>
-            <div class="swiper-slide" style="background-image:url(img/me.png)"></div>
-            <div class="swiper-slide" style="background-image:url(img/me.png)"></div>
-            <div class="swiper-slide" style="background-image:url(img/me.png)"></div>
-            <div class="swiper-slide" style="background-image:url(img/me.png)"></div>
+
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -186,36 +228,76 @@
             </div>
         </div>
     </div>
-    <form class="">
+    <form>
+
         <div class="row justify-content-center">
-            <div class="col-3 ">
-                <input type="text" class="form-control wow fadeInLeft" placeholder="First name">
+            <div class="col-3">
+                <label for="txt1">First name</label>
+
+                <input type="text" id="txt1" class="form-control wow fadeInLeft">
             </div>
             <div class="col-3 ">
-                <input type="text" class="form-control wow fadeInRight" placeholder="Last name">
+                <label for="txt2">Last name</label>
+
+                <input type="text" id="txt2" class="form-control wow fadeInRight">
             </div>
         </div>
         <div class="row justify-content-center wow fadeInUp">
             <div class="col-6 ">
                 <br>
-                <input type="email" class="form-control" placeholder="E-Mail">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" class="form-control">
             </div>
         </div>
         <div class="row justify-content-center wow fadeInUp">
             <div class="col-6 ">
                 <br>
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+                <label for="txt3">Message</label>
+                <textarea id="txt3" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
+        </div>
+        <div class="row justify-content-center" style="margin-top: 30px;">
+        <button id="formbutton" type="button" class="btn btn-light">Send</button>
         </div>
     </form>
+    <div class="response">Thanks for the response!</div>
+
 </div>
+
+
 <!--====================Footer===================-->
 <!--Footer with my social media handles, a brief intro and my positions.-->
-<!--<footer>
+<footer>
     <div id="grad">
+        <div class="">
 
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/ashwin36" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/goelashwin36" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/goelashwin36/" target="_blank">LinkedIn</a>
+                </li>
+
+            </ul>
+        </div>
     </div>
-</footer>-->
+</footer>
+
+
+
+
+
+
+
+
+
 <!--=====================Script-=====================-->
 <!--Slideshow-->
 <script>
@@ -259,7 +341,7 @@
 <!--wow js-->
 <script src="lib/wow/wow.min.js"></script>
 <!--Firebase-->
-<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<!--<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
 <script>
     // Initialize Firebase
     var config = {
@@ -271,11 +353,8 @@
         messagingSenderId: "211789354632"
     };
     firebase.initializeApp(config);
-</script>
-
-
-<!--Particle js-->
-<!--<script src="js/particles.js"></script>-->
-<!--<script src="js/app.js"></script>-->
+</script>-->
+    <script src="js/particles.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

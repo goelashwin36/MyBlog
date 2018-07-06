@@ -90,7 +90,7 @@ nav button{
     right: 0px;
     bottom: 15px;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto;
     font-size: 30px;
 
 }
@@ -108,16 +108,16 @@ nav button{
     transition: all 0.3s;
 
 }
-.icon-basic-magic-mouse{
-    color: white;
+#mouse .fa{
+    color: white !important;
     opacity: 0.6;
+    font-size: 40px !important;
 }
-.scroller:hover{
+#mouse:hover{
     cursor: pointer;
 }
-.scroller:hover .icon-basic-magic-mouse{
+#mouse:hover .fa{
     opacity: 0.9;
-    cursor: pointer;
 }
 .scroller:hover .scroll-text{
     -webkit-transform: translateY(-10px);

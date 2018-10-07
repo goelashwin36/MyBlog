@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Base Files-->
+    <title>Ash</title>
+    <link rel="stylesheet"  href="css/style.css">
+    <!--fa js-->
+    <script src="https://use.fontawesome.com/1619b5fcd7.js"></script>
+    <!--Linea icons css-->
+    <link href="icons/_ICONFONT/styles.css" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--Animate css-->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <!--Meta Tags-->
+    <meta description="My website" charset="UTF-8">
+    <meta name="author" content="Ashwin Goel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--jquery-->
+    <script src="lib/jquery/jquery.min.js"></script>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+            height: 400px;
+            width: 200px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+
+
+
+
+    <script>
+        console.log('Loaded');
+        $(window).ready(function(){
+            $('#loader').delay(1000).fadeOut(350);
+        });
+    </script>
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Muli|Montserrat|Lato" rel="stylesheet">
+
+</head>
+<body>
+<!--Preloader-->
+<div class="preloader" id="loader">
+    <img id="img_preloader" src="img/loader.svg" alt="Loading...">
+</div>
+
+
+<!--Back to top button-->
+<a href="#" class="backtotop">
+    <i class="fa fa-chevron-circle-up"></i>
+</a>
+
+<!--====================Nav Bar===================-->
+<!--Home, About, Projects, Gallery, Contact-->
+<nav id="navigation1" class="navbar navbar-expand-md fixed-top justify-content-between">
+    <a class="navbar-brand" style="font-family: 'Carter One', cursive; font-size: 30px; " href="#">Ashwin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#articles">Articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!--====================Grid===================-->
+<div class="row">
+    <div class="column">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+    </div>
+</div>
+<!--====================Footer===================-->
+<!--Footer with my social media handles, a brief intro and my positions.-->
+<footer>
+    <div id="grad">
+        <div class="">
+
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/ashwin36" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/goelashwin36" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/goelashwin36/" target="_blank">LinkedIn</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<!--=====================Script-=====================-->
+
+<!--Jquery-->
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<!--Jquery ui-->
+<!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><!--Main js file-->
+<script src="js/main.js"></script>
+<!--Bootstrap-->
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--easing js-->
+<script src="lib/easing/easing.min.js"></script>
+<!--fa js-->
+<!--wow js-->
+<script src="lib/wow/wow.min.js"></script>
+
+</body>
+</html>

@@ -164,7 +164,6 @@ nav button{
 #home_2{
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/tech.png) fixed center center;
     height: 10vh;
-    margin: 50px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -180,12 +179,12 @@ nav button{
 /* ---- particles.js container ---- */
 canvas {
     display: block;
+    height: 100vh;
     vertical-align: bottom;
 }
 #particles-js{
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg5.jpeg) fixed center center;
-    /*background-image: url(../img/bg6.jpg);*/
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -505,18 +504,17 @@ footer{
 footer ul{
     list-style: none;
     margin: 0;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 footer ul li{
     display: inline-block;
-    padding-right: 35px;
-    margin-right: 35px;
-    border-right: 1px solid #fff;
+    margin: 5px 0px;
+    /*border-right: 1px solid #fff;*/
 }
-footer ul li:nth-child(4){
+/*footer ul li:nth-child(4){
     border: none;
 
-}
+}*/
 footer ul li a {
     color: white !important;
     text-decoration: none;

@@ -1,5 +1,21 @@
 $(document).ready(function() {
 
+
+
+    var config = {
+        apiKey: "AIzaSyB_tu8x2vUwXniUuUiXKfQLRDSEvRu82cQ",
+        authDomain: "drizzle-ash-web.firebaseapp.com",
+        databaseURL: "https://drizzle-ash-web.firebaseio.com",
+        projectId: "drizzle-ash-web",
+        storageBucket: "drizzle-ash-web.appspot.com",
+        messagingSenderId: "240645886163"
+    };
+    firebase.initializeApp(config);
+
+
+    // References Forms Collection
+    var formRef = firebase.database().ref('Form');
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -7,7 +23,7 @@ $(document).ready(function() {
 
 
     //fade or slide backtotop and navbar1 on scrolling
-
+    if($(window).outerWidth()>766){
     $(window).scroll(function () {
         if ($(this).scrollTop() < 150) {
             $('.backtotop').fadeOut("slow");
@@ -17,10 +33,12 @@ $(document).ready(function() {
             $('.backtotop').fadeIn("slow");
             $('#navigation1').addClass('active',500);
 
-
         }
         return false;
-    });
+    });}
+    else{
+         $('#navigation1').addClass('active');
+    }
     //Backtotop smooth scrolling
 
     $('.backtotop').click(function(){
@@ -42,7 +60,6 @@ $(document).ready(function() {
             return false;
 
         });
-
     $('#formbutton').click(function(){
         var letters = /^[a-zA-Z\s]+$/;
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -82,6 +99,9 @@ $(document).ready(function() {
         }
         if(bool===true){
             $('.response').fadeIn(500);
+            console.log("1");
+            saveMessage($("#txt1").val(),$("#txt2").val(),$("#email").val(),$("#txt3").val());
+            console.log("2");
 
         }
         else{
@@ -90,6 +110,31 @@ $(document).ready(function() {
         bool = bool && false;
 
     });
+
+
+
+
+    //Function to get form values
+    function submitForm(e){
+        e.preventDefault();
+
+
+    }
+
+    //Save form to firebase
+
+    function saveMessage(first, last, email, message){
+        var newForm= formRef.push();
+        newForm.set({
+        first_name: first,
+            last_name: last,
+            email: email,
+            message: message
+
+        });
+        console.log("3");
+    }
+
 
 
 
@@ -104,3 +149,4 @@ $(document).ready(function() {
                 "resize":true},"modes":{"grab":{"distance":250,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,
                     "opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},
         "retina_detect":true});});
+

@@ -4,6 +4,7 @@
     <!--Base Files-->
     <title>Ash</title>
     <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet"  href="css/style2.css">
     <!--fa js-->
     <script src="https://use.fontawesome.com/1619b5fcd7.js"></script>
     <!--Linea icons css-->
@@ -19,74 +20,15 @@
     <!--jquery-->
     <script src="lib/jquery/jquery.min.js"></script>
 
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial;
-        }
-
-        .header {
-            text-align: center;
-            padding: 32px;
-        }
-
-        .row {
-            display: -ms-flexbox; /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap; /* IE10 */
-            flex-wrap: wrap;
-            padding: 0 4px;
-        }
-
-        /* Create four equal columns that sits next to each other */
-        .column {
-            -ms-flex: 25%; /* IE10 */
-            flex: 25%;
-            max-width: 25%;
-            padding: 0 4px;
-            height: 400px;
-            width: 200px;
-        }
-
-        .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-        }
-
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media screen and (max-width: 800px) {
-            .column {
-                -ms-flex: 50%;
-                flex: 50%;
-                max-width: 50%;
-            }
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-            .column {
-                -ms-flex: 100%;
-                flex: 100%;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-
-
-
-
     <script>
         console.log('Loaded');
         $(window).ready(function(){
-            $('#loader').delay(1000).fadeOut(350);
-        });
+        $('#loader').delay(1000).fadeOut(350);
+    });
     </script>
+    <style>
+
+    </style>
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=Carter+One|Muli|Montserrat|Lato" rel="stylesheet">
 
@@ -113,90 +55,144 @@
     <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="./index.html">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#articles">Articles</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
+
         </ul>
     </div>
 </nav>
 
 
-<!--====================Grid===================-->
-<div class="row">
-    <div class="column">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+<!--==================== HOME ===================-->
+<div id="particles-js" class="fixed">
+    <div id="myPageContent" class="container-fluid wow slideInDown">
+
     </div>
-    <div class="column">
-        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+
+</div>
+
+
+<!--====================Articles===================-->
+<!--Displays some of my articles in rectangular fancy big responsive tabs-->
+<div id="blog">
+    <div class="container wow zoomIn">
+        <div class="container mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h1 class="heading  wow zoomIn" style="color: #4ebdf1 !important;">POETRY REDEFINED</h1>
+                    <ul class="timeline">
+                        <li>
+                            <a target="_blank" href="https://www.poetryfoundation.org/poetrymagazine/poems/147866/the-culmination">The Culmination</a>
+                                <p>Generous instinct, were you<br>
+                            My hand I must<br>
+                            Think. The later brain.<br>
+                            My hands craving every<br>
+                            Learned heart. Nature, art,<br>
+                            World. In my memories<br>
+                            I thought of trust<br>
+                            Then all fear. I<br>
+                            Fell on my pain.<br>
+                            Hope shall in loss<br>
+                            Throb. My, my, my<br>
+                            Stand for the release.<br>
+                            A nation’s groan beneath<br>
+                            Dear night. All right.<br>
+
+                        </p>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="https://www.poetryfoundation.org/poetrymagazine/poems/147864/the-diagnosis">The Diagnosis</a>
+                            <p>I, sobbing in the rolling mist,<br>
+                                Started for peopled days. In dreams<br>
+                                A faded, lonely promontory shed petals.<br>
+                                Belief exists. Cunning with its perfume<br>
+                                Working from youth, defiance. A phantom<br>
+                                Vanished. The swift surrenders, leap into<br>
+                                The old dead heart of lies.<br>
+                                I will give, remembering my turns<br>
+                                Into foliage. Of what light unseen!<br>
+                                What, what, what, what, what, what<br>
+                                Will hold still without its end?<br></p>
+                        </li>
+                        <li>
+                            <a href="https://www.poetryfoundation.org/poetrymagazine/poems/147876/difference-difference">Difference, Difference</a>
+                            <p>Gravel path stirred by the rain<br>
+                                fallen hard through the sweetgum trees,<br>
+                                path that leads to the bend<br>
+                                where the trail splits open in air:<br><br>
+
+                                Everything is lighted evenly.<br>
+                                It is a queer hour. The difference<br>
+                                between light and shadow<br>
+                                is the jealousy turn in the eye.<br><br>
+
+                                The sun is all in the bottle cap<br>
+                                that glints in the silt like a djinn’s brass hilt,<br>
+                                in the way some lea  is frozen unto the air,<br>
+                                some warm leaf heavywet here, and in how, just there:<br><br>
+
+                                The strangeness strangely passes.<br>
+                                And evening mounts.<br>
+                                I can’t get the life out of my head.<br><br>
+
+                                There is no glamour on this path<br>
+                                but if I return I will find it<br>
+                                in the thought of how I looked for some.<br><br>
+
+                                I stoop to look at the veins that sweep<br>
+                                like Latin roots in the satin of things, dream:<br>
+                                The difference between something and nothing,<br>
+                                which is nothing.<br><br>
+
+                                The gravel lies on itself like dust lies on water.<br>
+                                No, no, there are no mothers here.<br>
+                                I bend to see it all, the little stones cast-wise.<br>
+                                Things chase themselves away from the mode of things.<br><br>
+
+                                I find a quartz, milked clear:<br>
+                                I could not hear its accent if it sang,<br>
+                                no matter how far off it formed.<br>
+                                What dead hand I should feel if I lifted it.<br></p>
+                        </li>
+                        <li>
+                        <a href="https://www.poetryfoundation.org/poetrymagazine/poems/147877/the-end-game-of-bloom">The End Game of Bloom
+                        </a>
+                        <p>Has it turned out we’ve wasted our time?<br>
+                            We’ve wasted our time.<br><br>
+
+                            Our magnificent bodies on the dissecting table.<br>
+                            Our day after tomorrow.<br>
+                            Our what to do now.<br><br>
+
+                            The stink of us so undignified.<br>
+                            The end game of bloom.<br><br>
+
+                            We will lose the sun<br>
+                            struck and disassembled<br>
+                            lightly down and crawling like a worm.<br><br>
+
+                            This earth it is a banquet and laid on its table we.<br>
+                            A puncture in the wound room, crude and obvious.<br><br>
+
+                            The raving lunatics they are upon us,<br>
+                            but we are raving too.<br>
+                        </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-muted mt-5 mb-5 text-center small">by : <a class="text-muted" target="_blank" href="http://totoprayogo.com">totoprayogo.com</a></div>
+
     </div>
 </div>
-<!--====================Footer===================-->
-<!--Footer with my social media handles, a brief intro and my positions.-->
-<footer>
-    <div id="grad">
-        <div class="">
-
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/ashwin36" target="_blank">Facebook</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram" target="_blank">Instagram</a>
-                </li>
-                <li>
-                    <a href="https://www.github.com/goelashwin36" target="_blank">Github</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/goelashwin36/" target="_blank">LinkedIn</a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-</footer>
 
 
 <!--=====================Script-=====================-->
 
+</script>
 <!--Jquery-->
 <script src="lib/jquery/jquery-migrate.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -212,6 +208,21 @@
 <!--fa js-->
 <!--wow js-->
 <script src="lib/wow/wow.min.js"></script>
-
+<!--Firebase-->
+<!--<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDAlmLfNXSz4-RZxbwE-Y2y3rOmE5Br6fQ",
+        authDomain: "ash36mywebsite.firebaseapp.com",
+        databaseURL: "https://ash36mywebsite.firebaseio.com",
+        projectId: "ash36mywebsite",
+        storageBucket: "",
+        messagingSenderId: "211789354632"
+    };
+    firebase.initializeApp(config);
+</script>-->
+    <script src="js/particles.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

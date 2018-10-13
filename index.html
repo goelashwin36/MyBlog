@@ -273,7 +273,7 @@
             </div>
         </div>
         <div class="row justify-content-center" style="margin-top: 30px;">
-        <button id="formbutton" type="button" class="btn btn-light" onsubmit="">Send</button>
+        <button id="formbutton" type="button" class="btn btn-light" onsubmit="submitDetail()" onclick="submitDetail()">Send</button>
         </div>
     </form>
     <div class="response">Thanks for the response!</div>
@@ -356,7 +356,24 @@
 <!--fa js-->
 <!--wow js-->
 <script src="lib/wow/wow.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBem4YtXhfhzJHSlmY90Bm9dDgl7rWw68I",
+    authDomain: "ag-creations-c47c1.firebaseapp.com",
+    databaseURL: "https://ag-creations-c47c1.firebaseio.com",
+    projectId: "ag-creations-c47c1",
+    storageBucket: "ag-creations-c47c1.appspot.com",
+    messagingSenderId: "1006107063950"
+  };
+  firebase.initializeApp(config);
+</script>
+
+    <script type="text/javascript" src="js/firebase.js"></script>
 
 
     <script src="js/particles.js"></script>

@@ -528,11 +528,8 @@ footer ul li a:hover{
 
 
 }
-    /*===========Blog===========*/
-#blog{
-    padding-top: 100px;
-}
-    /*===========Footer Gradient===========*/
+
+/*===========Footer Gradient===========*/
 
 #grad {
     height: inherit;
@@ -580,3 +577,8 @@ footer ul li a:hover{
     }
 }
 
+
+/*===========Blog===========*/
+#blog{
+    padding-top: 100px;
+}

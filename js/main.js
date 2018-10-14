@@ -2,19 +2,6 @@ $(document).ready(function() {
 
 
 
-    var config = {
-        apiKey: "AIzaSyB_tu8x2vUwXniUuUiXKfQLRDSEvRu82cQ",
-        authDomain: "drizzle-ash-web.firebaseapp.com",
-        databaseURL: "https://drizzle-ash-web.firebaseio.com",
-        projectId: "drizzle-ash-web",
-        storageBucket: "drizzle-ash-web.appspot.com",
-        messagingSenderId: "240645886163"
-    };
-    firebase.initializeApp(config);
-
-
-    // References Forms Collection
-    var formRef = firebase.database().ref('Form');
 
     // Initiate the wowjs
     new WOW().init();
@@ -66,7 +53,7 @@ $(document).ready(function() {
         var email=$('#email');
         var  bool = true;
 
-        for(i=1;i<=3;i++){
+        /*for(i=1;i<=3;i++){
             var x = $('#txt'+i)
             if(x.val().match(letters)){
                 if(x.hasClass('red')){
@@ -108,7 +95,7 @@ $(document).ready(function() {
             $('.response').fadeOut(500);
         }
         bool = bool && false;
-
+*/
     });
 
 
